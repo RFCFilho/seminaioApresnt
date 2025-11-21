@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminário Big Data - O Ponto de Partida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="isabelle.css"> 
+    <link rel="stylesheet" type="text/css" href="voltar.js">
+    
+   
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="/img/Isabelleredond1.png" alt="Foto Palestrante" class="palestrante-foto">
+            <div class="palestrante-info">
+                <h2 id="nome-palestrante">Isabelle </h2>
+                <p>Seminário Big Data</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h1>O Ponto de Partida: O Que é Big Data?</h1>
+            <p>
+                Big Data refere-se a conjuntos de dados tão grandes, complexos e rápidos que os softwares tradicionais de processamento de dados não conseguem capturar, gerenciar e processar em um tempo razoável.
+            </p>
+            <p>
+                O conceito central é a <strong>explosão exponencial de informações</strong> geradas por fontes como redes sociais, sensores IoT (Internet das Coisas), transações online e dispositivos móveis. O Big Data desafia as ferramentas convencionais porque transcende as capacidades de armazenamento e análise de um único servidor, exigindo abordagens e infraestruturas totalmente novas.
+            </p>
+        </section>
+
+        <section id="pilares">
+            <h1>Os 5 Vs Fundamentais</h1>
+            <p>A estrutura que define o Big Data é frequentemente descrita pelos seguintes cinco pilares:</p>
+            
+            <ul class="lista-vs">
+                <li>
+                    <span class="vs-titulo">1. VOLUME</span>
+                    A quantidade de dados gerados e armazenados, medida em petabytes e exabytes. Este é o aspecto mais óbvio e a característica original do Big Data.
+                </li>
+                <li>
+                    <span class="vs-titulo">2. VELOCIDADE</span>
+                    A taxa na qual os dados são gerados, coletados e (mais crucialmente) processados. Muitos dados (como logs de transações) precisam ser analisados em tempo real ou quase real para terem valor.
+                </li>
+                <li>
+                    <span class="vs-titulo">3. VARIEDADE</span>
+                    Os diferentes formatos e tipos de dados. Inclui dados estruturados (planilhas, SQL), semiestruturados (XML, JSON) e não estruturados (e-mails, vídeos, áudios, posts).
+                </li>
+                <li>
+                    <span class="vs-titulo">4. VERACIDADE</span>
+                    A qualidade, consistência e confiabilidade dos dados. Como o volume e a variedade são altos, a incerteza e a imprecisão inerentes aos dados brutos precisam ser consideradas e gerenciadas.
+                </li>
+                <li>
+                    <span class="vs-titulo">5. VALOR</span>
+                    O potencial de transformar os dados em insights e, finalmente, em ações de negócio ou inteligência. Este é o objetivo final de qualquer iniciativa de Big Data.
+                </li>
+            </ul>
+        </section>
+
+        <section id="desafio">
+            <h1>O Desafio da Escala</h1>
+            <p>
+                O principal desafio é como lidar com a escala gigantesca dos dados (petabytes e além) de forma eficiente e econômica. Isso levou à necessidade de infraestruturas distribuídas e escaláveis.
+            </p>
+            <p>
+                Em vez de usar um único servidor enorme (escalabilidade vertical), o Big Data utiliza o processamento em clusters de milhares de máquinas de hardware comum (<strong>escalabilidade horizontal</strong>).
+            </p>
+            <p style="border-top: 1px solid var(--marrom); padding-top: 20px; margin-top: 20px;">
+                O <span class="tech-highlight">Hadoop</span> é um framework pioneiro que resolve esse desafio ao fornecer um sistema de arquivos distribuído (<span class="tech-highlight">HDFS</span>) e um sistema de processamento que divide e executa tarefas em nós paralelos (<span class="tech-highlight">MapReduce</span>).
+            </p>
+        </section>
+    </main>
+ 
+<button class="botao-voltar" > <a href="index.html">INICIO</a></button>
+
+</body>
+</html>

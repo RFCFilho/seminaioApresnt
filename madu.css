@@ -1,0 +1,224 @@
+        :root {
+            --bg-page: #263238;
+            --bg-card: #37474F;
+            --marrom: #6D4C41;
+            --azul-titulo: #81D4FA;
+            --vermelho: #FF5252;
+            --texto: #ECEFF1;
+            --sombra: rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--texto);
+            line-height: 1.6;
+            padding-top: 160px;
+            user-select: none;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 140px;
+            background: rgba(38, 50, 56, 0.98);
+            border-bottom: 4px solid var(--marrom);
+            box-shadow: 0 4px 20px var(--sombra);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-app-region: drag;
+        }
+
+        .header-container {
+            width: 90%;
+            max-width: 1000px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .palestrante-foto {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--azul-titulo);
+            box-shadow: 0 0 15px rgba(79, 195, 247, 0.3);
+        }
+
+        .palestrante-info h2 {
+            font-size: 1.4rem;
+            color: var(--azul-titulo);
+            margin-bottom: 5px;
+        }
+
+        .palestrante-info p {
+            font-size: 0.9rem;
+            color: #B0BEC5;
+            font-weight: 300;
+        }
+
+        main {
+            width: 90%;
+            max-width: 950px;
+            margin: 0 auto;
+            padding-bottom: 80px;
+        }
+
+        section {
+            background: var(--bg-card);
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            border-left: 6px solid var(--marrom);
+            box-shadow: 0 10px 25px var(--sombra);
+        }
+
+        h1 {
+            color: var(--azul-titulo);
+            font-size: 2.0rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(129, 212, 250, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--vermelho);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        .pipeline-steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .step {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--azul-titulo);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .step-title {
+            color: var(--azul-titulo);
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        /* --- Estilos para CARDS DE TECNOLOGIA --- */
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .tech-card {
+            background: rgba(0, 0, 0, 0.25);
+            flex: 1 1 280px;
+            /* Responsivo */
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 3px solid var(--vermelho);
+            transition: transform 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th {
+            background-color: var(--marrom);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 3px solid var(--vermelho);
+        }
+
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            vertical-align: top;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-table tr:hover {
+            background-color: rgba(129, 212, 250, 0.1);
+        }
+
+        strong {
+            color: var(--azul-titulo);
+        }
+
+        .highlight {
+            color: var(--vermelho);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-table {
+                font-size: 0.8rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px;
+            }
+        }
+
+        .botao-voltar {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #cccccc;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .botao-voltar:hover {
+            background-color: #f0f0f0;
+        }
+
+        .titulo-centralizado {
+            text-align: center;
+        }

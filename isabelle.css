@@ -1,0 +1,183 @@
+        :root {
+            --bg-page: #263238;
+            --bg-card: #37474F;
+            --marrom: #6D4C41;
+            --azul-titulo: #81D4FA;
+            --vermelho: #FF5252;
+            --texto: #ECEFF1;
+            --sombra: rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--texto);
+            line-height: 1.8;
+            padding-top: 160px;
+        }
+
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 140px;
+            background: rgba(38, 50, 56, 0.98);
+            border-bottom: 4px solid var(--marrom);
+            box-shadow: 0 4px 20px var(--sombra);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-container {
+            width: 90%;
+            max-width: 1000px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .palestrante-foto {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--azul-titulo);
+            box-shadow: 0 0 15px rgba(79, 195, 247, 0.3);
+        }
+
+        .palestrante-info h2 {
+            font-size: 1.4rem;
+            color: var(--azul-titulo);
+            margin-bottom: 5px;
+        }
+
+        .palestrante-info p {
+            font-size: 0.9rem;
+            color: #B0BEC5;
+            font-weight: 300;
+        }
+
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 80px;
+        }
+
+        section {
+            background: var(--bg-card);
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            border-left: 6px solid var(--marrom);
+            box-shadow: 0 10px 25px var(--sombra);
+        }
+
+        h1 {
+            color: var(--azul-titulo);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: var(--vermelho);
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 82, 82, 0.3);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: var(--azul-titulo);
+        }
+
+        .lista-vs {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .lista-vs li {
+            background: rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--vermelho);
+            transition: transform 0.2s;
+        }
+
+        .lista-vs li:hover {
+            transform: translateX(10px);
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .vs-titulo {
+            color: var(--vermelho);
+            font-family: 'Roboto Mono', monospace;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .tech-highlight {
+            background-color: #212121;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--vermelho);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: auto;
+                padding: 20px 0;
+            }
+
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            body {
+                padding-top: 180px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .botao-voltar {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #cccccc;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .botao-voltar:hover {
+            background-color: #f0f0f0;
+        }

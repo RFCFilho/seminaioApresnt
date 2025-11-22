@@ -1,0 +1,161 @@
+:root {
+            --bg-page: #263238;        
+            --bg-card: #37474F;        
+            --marrom: #6D4C41;         
+            --azul-titulo: #81D4FA;    
+            --vermelho: #FF5252;       
+            --texto: #ECEFF1;          
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--texto);
+            margin: 0;
+            padding: 50px 20px; /* Mais espaçamento nas bordas */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            user-select: none;
+        }
+
+        /* --- TOPO: ESUDA (Aumentado) --- */
+        .header-inst {
+            margin-bottom: 60px;
+            border-bottom: 3px solid var(--marrom);
+            padding-bottom: 30px;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .header-inst h1 {
+            color: var(--azul-titulo);
+            font-size: 3.2rem; /* Aumentado de 2.5rem */
+            letter-spacing: 4px;
+            margin: 0;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .header-inst h2 {
+            font-size: 1.5rem; /* Aumentado */
+            color: #B0BEC5;
+            font-weight: 300;
+            margin-top: 15px;
+        }
+
+        /* --- PROFESSOR (Aumentado) --- */
+        .professor-section {
+            margin-bottom: 60px;
+            position: relative;
+            transform: scale(1.05); /* Um leve zoom geral no bloco */
+        }
+
+        .prof-img {
+            width: 180px; /* Aumentado de 140px */
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--marrom);
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            margin-bottom: 15px;
+        }
+
+        .label-cargo {
+            font-family: 'Roboto Mono', monospace;
+            color: var(--vermelho);
+            font-size: 1.1rem; /* Aumentado */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .prof-name {
+            font-size: 1.8rem; /* Aumentado */
+            font-weight: bold;
+            color: white;
+        }
+
+        /* --- EQUIPE (Aumentado) --- */
+        .team-container {
+            display: flex;
+            gap: 50px; /* Mais espaço entre eles */
+            justify-content: center;
+            margin-bottom: 70px;
+            flex-wrap: wrap;
+        }
+
+        .student {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .student-img {
+            width: 145px; /* Aumentado de 100px */
+            height: 185px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--azul-titulo);
+            margin-bottom: 15px;
+            opacity: 0.95;
+            transition: transform 0.3s, border-color 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .student-img:hover {
+            transform: scale(1.15);
+            opacity: 1;
+            border-color: var(--vermelho);
+        }
+
+        .student-name {
+            font-size: 1.2rem; /* Aumentado */
+            color: #CFD8DC;
+            font-weight: 600;
+        }
+
+        /* --- QR CODE & FINAL (Aumentado) --- */
+        .qr-area {
+            background: var(--bg-card);
+            padding: 40px; /* Mais preenchimento interno */
+            border-radius: 20px;
+            border: 2px solid var(--marrom);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            max-width: 500px; /* Bloco mais largo */
+            width: 95%;
+            animation: slideUp 1s ease;
+        }
+
+        .qr-img {
+            width: 180px; /* Aumentado de 150px */
+            height: 180px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .big-thanks {
+            font-size: 2.8rem; /* Bem grande agora */
+            color: var(--azul-titulo);
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .qr-text {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }

@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seminário Big Data - Arquitetura</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="madu.css">
     <link rel="stylesheet" type="text/css" href="voltar.js">
 
 </head>
+
 <body>
 
     <header>
         <div class="header-container">
-            <img src="/img/MaduRedond1.jpeg" alt="Foto Palestrante" class="palestrante-foto">
+            <img src="img/MaduRedond1.jpeg" alt="Foto Palestrante" class="palestrante-foto">
             <div class="palestrante-info">
-                <h2 id="nome-palestrante">Maduqueu</h2>
-                <p>Arquitetura e Ferramentas Big Data</p>
+                <h1 id="nome-palestrante">Maduqueu</h1>
+                <p>
+                <h2>Big Data - Arquitetura e Ferramentas </h2>
+                </p>
             </div>
         </div>
     </header>
 
     <main>
         <section id="pipeline">
-            <h1 class="titulo-centralizado">ARQUITETURA E FERRAMENTAS</h1>
+
             <h1>Pipeline de Dados</h1>
             <p>
-                O Pipeline de Dados é o fluxo contínuo e automatizado que move e processa dados brutos desde a fonte até um destino onde podem ser consumidos. As etapas principais são:
+                O Pipeline de Dados é o fluxo contínuo e automatizado que move e processa dados brutos desde a fonte até
+                um destino onde podem ser consumidos. As etapas principais são:
             </p>
-            
+
             <div class="pipeline-steps">
                 <div class="step">
                     <span class="step-title">1. Coleta (Ingestion)</span>
@@ -52,19 +59,22 @@
         <section id="tecnologias">
             <h1>Tecnologias Chave</h1>
             <p>O ecossistema é vasto, mas três tecnologias fundamentam o Big Data moderno:</p>
-            
+
             <div class="tech-grid">
                 <div class="tech-card">
                     <h3>Hadoop</h3>
-                    <p>Framework open-source para processamento distribuído. Foca em armazenar (<strong>HDFS</strong>) e processar (<strong>MapReduce</strong>) dados de forma tolerante a falhas em clusters.</p>
+                    <p>Framework open-source para processamento distribuído. Foca em armazenar (<strong>HDFS</strong>) e
+                        processar (<strong>MapReduce</strong>) dados de forma tolerante a falhas em clusters.</p>
                 </div>
                 <div class="tech-card">
                     <h3>Spark</h3>
-                    <p>Mecanismo unificado e veloz. Realiza cálculos na <strong>memória RAM</strong> (até 100x mais rápido que o MapReduce). Suporta streaming e Machine Learning.</p>
+                    <p>Mecanismo unificado e veloz. Realiza cálculos na <strong>memória RAM</strong> (até 100x mais
+                        rápido que o MapReduce). Suporta streaming e Machine Learning.</p>
                 </div>
                 <div class="tech-card">
                     <h3>NoSQL</h3>
-                    <p>Bancos de dados flexíveis sem esquema rígido (Not Only SQL). Feitos para <strong>escalabilidade horizontal</strong>. Exemplos: MongoDB, Redis, Cassandra.</p>
+                    <p>Bancos de dados flexíveis sem esquema rígido (Not Only SQL). Feitos para <strong>escalabilidade
+                            horizontal</strong>. Exemplos: MongoDB, Redis, Cassandra.</p>
                 </div>
             </div>
         </section>
@@ -84,8 +94,10 @@
                 <tbody>
                     <tr>
                         <td><strong>Estrutura</strong></td>
-                        <td>Estruturada <br><span style="font-size:0.8em; color:#B0BEC5;">(Esquema na escrita)</span></td>
-                        <td>Bruta/Não Estruturada <br><span style="font-size:0.8em; color:#B0BEC5;">(Esquema na leitura)</span></td>
+                        <td>Estruturada <br><span style="font-size:0.8em; color:#B0BEC5;">(Esquema na escrita)</span>
+                        </td>
+                        <td>Bruta/Não Estruturada <br><span style="font-size:0.8em; color:#B0BEC5;">(Esquema na
+                                leitura)</span></td>
                     </tr>
                     <tr>
                         <td><strong>Objetivo</strong></td>
@@ -106,10 +118,14 @@
             </table>
 
             <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--marrom);">
-                O <span class="highlight">Data Warehouse</span> armazena dados processados para relatórios específicos. Já o <span class="highlight">Data Lake</span> armazena tudo, e a estrutura é definida apenas quando o dado é lido (<em>Schema-on-Read</em>).
+                O <span class="highlight">Data Warehouse</span> armazena dados processados para relatórios específicos.
+                Já o <span class="highlight">Data Lake</span> armazena tudo, e a estrutura é definida apenas quando o
+                dado é lido (<em>Schema-on-Read</em>).
             </p>
         </section>
     </main>
-<button class="botao-voltar" > <a href="index.html">INICIO</a></button>
+    <button class="botao-voltar"> <a href="index.html">INICIO</a></button>
+    <button class="botao-voltar"> <a href="anderson.html">PRÓXIMO</a></button>
 </body>
+
 </html>

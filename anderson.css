@@ -46,8 +46,8 @@
         }
 
         .palestrante-foto {
-            width: 90px;
-            height: 90px;
+            width: 150px;
+            height: 190px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid var(--azul-titulo);

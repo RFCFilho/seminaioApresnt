@@ -48,8 +48,8 @@
         }
 
         .palestrante-foto {
-            width: 90px;
-            height: 90px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid var(--azul-titulo);
@@ -64,7 +64,7 @@
 
         .palestrante-info p {
             font-size: 0.9rem;
-            color: #B0BEC5;
+            color: #e2e5e7;
             font-weight: 300;
         }
 
@@ -85,7 +85,7 @@
         }
 
         h1 {
-            color: var(--azul-titulo);
+            color: var(--texto);
             font-size: 2.0rem;
             margin-bottom: 25px;
             text-transform: uppercase;
@@ -132,7 +132,7 @@
             font-size: 0.9rem;
         }
 
-        /* --- Estilos para CARDS DE TECNOLOGIA --- */
+        
         .tech-grid {
             display: flex;
             flex-wrap: wrap;
@@ -143,7 +143,7 @@
         .tech-card {
             background: rgba(0, 0, 0, 0.25);
             flex: 1 1 280px;
-            /* Responsivo */
+            
             padding: 20px;
             border-radius: 8px;
             border-top: 3px solid var(--vermelho);
@@ -222,3 +222,4 @@
         .titulo-centralizado {
             text-align: center;
         }
+        

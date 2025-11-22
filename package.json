@@ -1,0 +1,26 @@
+{
+  "name": "apresseminario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {    
+      "start": "electron .",
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RFCFilho/seminaioApresnt.git"
+  },
+  "keywords": [],
+  "author": "RFCFilho",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RFCFilho/seminaioApresnt/issues"
+  },
+  "homepage": "https://github.com/RFCFilho/seminaioApresnt#readme",
+  "devDependencies": {
+    "electron": "^39.2.3",
+    "electron-packager": "^17.1.2"
+  }
+}
